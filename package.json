@@ -1,0 +1,21 @@
+{
+  "name": "heat-check-form",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "qr": "node generate_qr.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "qrcode": "^1.5.1",
+    "xlsx": "^0.18.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

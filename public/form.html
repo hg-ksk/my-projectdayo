@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>健康チェック</title>
+</head>
+<body>
+  <h1>健康チェックフォーム</h1>
+  <form action="/submit" method="POST">
+    <label>会社名: <input type="text" name="company" required></label><br><br>
+    
+    <label>道具（複数選択可）:</label><br>
+    <input type="checkbox" name="tools" value="水">水
+    <input type="checkbox" name="tools" value="経口補水液">経口補水液
+    <input type="checkbox" name="tools" value="氷">氷
+    <input type="checkbox" name="tools" value="塩分">塩分
+    <input type="checkbox" name="tools" value="スポーツドリンク">スポーツドリンク
+    <input type="checkbox" name="tools" value="冷却氷">冷却氷
+    <br><br>
+
+    <div>
+   <h2>作業前/朝礼前</h2>
+   <h3>1人目</h3>
+      <label>名前: <input type="text" name="name1"></label><br>
+    </div>
+    <div>
+      <label>1. 6時間以上睡眠を取れましたか？</label><br> 
+      <label><input type="radio" name="sleep1" value="〇"> 〇</label>
+      <label><input type="radio" name="sleep1" value="△"> △</label>
+      <label><input type="radio" name="sleep1" value="×"> ×</label>
+    </div> 
+    <div>
+      <label>2. 疲れは溜まっていませんか？</label><br>
+ 　　 <label><input type="radio" name="fatigue1" value="〇"> 〇</label>
+  　　<label><input type="radio" name="fatigue1" value="△"> △</label>
+  　　<label><input type="radio" name="fatigue1" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>3. 朝食を食べましたか？</label><br>
+　　  <label><input type="radio" name="morning1" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="morning1" value="△"> △</label>
+ 　　 <label><input type="radio" name="morning1" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>4. 二日酔いではないですか？</label><br>
+ 　　 <label><input type="radio" name="Hangover1" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Hangover1" value="△"> △</label>
+ 　　 <label><input type="radio" name="Hangover1" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>5. 現在の体調は良いですか？</label><br>
+ 　　 <label><input type="radio" name="condition1" value="〇"> 〇</label>
+  　　<label><input type="radio" name="condition1" value="△"> △</label>
+  　　<label><input type="radio" name="condition1" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>6. 空調服を着用していますか？</label><br>
+ 　　 <label><input type="radio" name="clothing1" value="〇"> 〇</label>
+  　　<label><input type="radio" name="clothing1" value="△"> △</label>
+  　　<label><input type="radio" name="clothing1" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>7. 持病・病気による医師からの暑熱環境での作業制限の確認？</label><br>
+ 　　 <label><input type="radio" name="doctor1" value="〇"> 〇：問題なし又は持病病気なし</label>
+ 　　 <label><input type="radio" name="doctor1" value="△"> △：注意するよう言われている</label>
+ 　　 <label><input type="radio" name="doctor1" value="×"> ×:止められている</label>
+　　</div>
+　　<div>
+ 　　 <label>8. 暑熱順化の確認？</label><br>
+ 　　 <label><input type="radio" name="heat1" value="1"> 1：1～2日目</label>
+ 　　 <label><input type="radio" name="heat1" value="2"> 2：3日目</label>
+ 　　 <label><input type="radio" name="heat1" value="3"> 3：4～5日目</label>
+ 　　 <label><input type="radio" name="heat1" value="4"> 4：6～7日目</label>
+ 　　 <label><input type="radio" name="heat1" value="5"> 5：8日目以上</label>
+　　</div>
+　　<div>
+ 　　 <label>本日の作業は可能ですか？</label><br>
+ 　　 <label><input type="radio" name="possible1" value="〇"> 〇</label>
+  　　<label><input type="radio" name="possible1" value="△"> △</label>
+  　　<label><input type="radio" name="possible1" value="×"> ×</label>
+　　</div>
+    <label>水分・塩分の接種確認:</label><br>
+    <h2>10. 水分・塩分の摂取確認（午前）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>8:30</p>
+  　　　<label><input type="radio" name="intake_08301" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_08301" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_08301" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_08301" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>9:00</p>
+  　　　<label><input type="radio" name="intake_09001" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09001" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09001" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_09001" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>9:30</p>
+ 　　　 <label><input type="radio" name="intake_09301" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09301" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09301" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_09301" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>10:00</p>
+ 　　　 <label><input type="radio" name="intake_10001" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_10001" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_10001" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10001" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>10:30</p>
+　　　  <label><input type="radio" name="intake_10301" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_10301" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_10301" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10301" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>11:00</p>
+ 　　　 <label><input type="radio" name="intake_11001" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_11001" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_11001" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11001" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>11:30</p>
+　　　  <label><input type="radio" name="intake_11301" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_11301" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_11301" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11301" value="とっていない"> とっていない</label>
+　　　</div>
+
+ <h2>10. 午後作業前</h2>
+　　<div>
+ 　　 <label>9. 昼食はしっかり食べましたか？</label><br>
+　　  <label><input type="radio" name="lunch1" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="lunch1" value="△"> △</label>
+ 　　 <label><input type="radio" name="lunch1" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>10. 水分・塩分は補給できましたか？</label><br>
+　　  <label><input type="radio" name="water1" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="water1" value="△"> △</label>
+ 　　 <label><input type="radio" name="water1" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>11. 気分・顔色は良いですか？</label><br>
+　　  <label><input type="radio" name="Complexion1" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Complexion1" value="△"> △</label>
+ 　　 <label><input type="radio" name="Complexion1" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>午後の作業も可能ですか？</label><br>
+　　  <label><input type="radio" name="work1" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="work1" value="△"> △</label>
+ 　　 <label><input type="radio" name="work1" value="×"> ×</label>
+　　</div>
+
+   <h2>10. 水分・塩分の摂取確認（午後）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>13:300</p>
+  　　　<label><input type="radio" name="intake_13001" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_13001" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_13001" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_13001" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>14:00</p>
+ 　　　 <label><input type="radio" name="intake_14001" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_14001" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_14001" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14001" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>14:30</p>
+ 　　　 <label><input type="radio" name="intake_14301" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_14301" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_14301" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14301" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>15:00</p>
+　　　  <label><input type="radio" name="intake_15001" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_15001" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_15001" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15001" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>15:30</p>
+ 　　　 <label><input type="radio" name="intake_15301" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_15301" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_15301" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15301" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:00</p>
+　　　  <label><input type="radio" name="intake_16001" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16001" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16001" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16001" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:30</p>
+　　　  <label><input type="radio" name="intake_16301" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16301" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16301" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16301" value="とっていない"> とっていない</label>
+　　　</div>
+
+
+   <h2>作業前/朝礼前</h2>
+   <h3>2人目</h3>
+      <label>名前: <input type="text" name="name2"></label><br>
+    </div>
+    <div>
+      <label>1. 6時間以上睡眠を取れましたか？</label><br> 
+      <label><input type="radio" name="sleep2" value="〇"> 〇</label>
+      <label><input type="radio" name="sleep2" value="△"> △</label>
+      <label><input type="radio" name="sleep2" value="×"> ×</label>
+    </div> 
+    <div>
+      <label>2. 疲れは溜まっていませんか？</label><br>
+ 　　 <label><input type="radio" name="fatigue2" value="〇"> 〇</label>
+  　　<label><input type="radio" name="fatigue2" value="△"> △</label>
+  　　<label><input type="radio" name="fatigue2" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>3. 朝食を食べましたか？</label><br>
+　　  <label><input type="radio" name="morning2" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="morning2" value="△"> △</label>
+ 　　 <label><input type="radio" name="morning2" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>4. 二日酔いではないですか？</label><br>
+ 　　 <label><input type="radio" name="Hangover2" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Hangover2" value="△"> △</label>
+ 　　 <label><input type="radio" name="Hangover2" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>5. 現在の体調は良いですか？</label><br>
+ 　　 <label><input type="radio" name="condition2" value="〇"> 〇</label>
+  　　<label><input type="radio" name="condition2" value="△"> △</label>
+  　　<label><input type="radio" name="condition2" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>6. 空調服を着用していますか？</label><br>
+ 　　 <label><input type="radio" name="clothing2" value="〇"> 〇</label>
+  　　<label><input type="radio" name="clothing2" value="△"> △</label>
+  　　<label><input type="radio" name="clothing2" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>7. 持病・病気による医師からの暑熱環境での作業制限の確認？</label><br>
+ 　　 <label><input type="radio" name="doctor2" value="〇"> 〇：問題なし又は持病病気なし</label>
+ 　　 <label><input type="radio" name="doctor2" value="△"> △：注意するよう言われている</label>
+ 　　 <label><input type="radio" name="doctor2" value="×"> ×:止められている</label>
+　　</div>
+　　<div>
+ 　　 <label>8. 暑熱順化の確認？</label><br>
+ 　　 <label><input type="radio" name="heat2" value="1"> 1：1～2日目</label>
+ 　　 <label><input type="radio" name="heat2" value="2"> 2：3日目</label>
+ 　　 <label><input type="radio" name="heat2" value="3"> 3：4～5日目</label>
+ 　　 <label><input type="radio" name="heat2" value="4"> 4：6～7日目</label>
+ 　　 <label><input type="radio" name="heat2" value="5"> 5：8日目以上</label>
+　　</div>
+　　<div>
+ 　　 <label>本日の作業は可能ですか？</label><br>
+ 　　 <label><input type="radio" name="possible2" value="〇"> 〇</label>
+  　　<label><input type="radio" name="possible2" value="△"> △</label>
+  　　<label><input type="radio" name="possible2" value="×"> ×</label>
+　　</div>
+    <label>水分・塩分の接種確認:</label><br>
+   <h2>10. 水分・塩分の摂取確認（午前）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>8:30</p>
+  　　　<label><input type="radio" name="intake_08302" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_08302" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_08302" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_08302" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>9:00</p>
+  　　　<label><input type="radio" name="intake_09002" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09002" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09002" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_09002" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>9:30</p>
+ 　　　 <label><input type="radio" name="intake_09302" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09302" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09302" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_09302" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>10:00</p>
+ 　　　 <label><input type="radio" name="intake_10002" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_10002" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_10002" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10002" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>10:30</p>
+　　　  <label><input type="radio" name="intake_10302" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_10302" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_10302" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10302" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>11:00</p>
+ 　　　 <label><input type="radio" name="intake_11002" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_11002" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_11002" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11002" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>11:30</p>
+　　　  <label><input type="radio" name="intake_11302" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_11302" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_11302" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11302" value="とっていない"> とっていない</label>
+　　　</div>
+
+ <h2>10. 午後作業前</h2>
+　　<div>
+ 　　 <label>9. 昼食はしっかり食べましたか？</label><br>
+　　  <label><input type="radio" name="lunch2" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="lunch2" value="△"> △</label>
+ 　　 <label><input type="radio" name="lunch2" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>10. 水分・塩分は補給できましたか？</label><br>
+　　  <label><input type="radio" name="water2" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="water2" value="△"> △</label>
+ 　　 <label><input type="radio" name="water2" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>11. 気分・顔色は良いですか？</label><br>
+　　  <label><input type="radio" name="Complexion2" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Complexion2" value="△"> △</label>
+ 　　 <label><input type="radio" name="Complexion2" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>午後の作業も可能ですか？</label><br>
+　　  <label><input type="radio" name="work2" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="work2" value="△"> △</label>
+ 　　 <label><input type="radio" name="work2" value="×"> ×</label>
+　　</div>
+
+   <h2>10. 水分・塩分の摂取確認（午後）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>13:300</p>
+  　　　<label><input type="radio" name="intake_13302" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_13302" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_13302" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_13302" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>14:00</p>
+ 　　　 <label><input type="radio" name="intake_14002" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_14002" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_14002" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14002" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>14:30</p>
+ 　　　 <label><input type="radio" name="intake_14302" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_14302" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_14302" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14302" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>15:00</p>
+　　　  <label><input type="radio" name="intake_15002" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_15002" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_15002" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15002" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>15:30</p>
+ 　　　 <label><input type="radio" name="intake_15302" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_15302" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_15302" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15302" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:00</p>
+　　　  <label><input type="radio" name="intake_16002" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16002" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16002" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16002" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:30</p>
+　　　  <label><input type="radio" name="intake_16302" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16302" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16302" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16302" value="とっていない"> とっていない</label>
+　　　</div>
+
+   <h2>作業前/朝礼前</h2>
+   <h3>3人目</h3>
+      <label>名前: <input type="text" name="name3"></label><br>
+    </div>
+    <div>
+      <label>1. 6時間以上睡眠を取れましたか？</label><br> 
+      <label><input type="radio" name="sleep3" value="〇"> 〇</label>
+      <label><input type="radio" name="sleep3" value="△"> △</label>
+      <label><input type="radio" name="sleep3" value="×"> ×</label>
+    </div> 
+    <div>
+      <label>2. 疲れは溜まっていませんか？</label><br>
+ 　　 <label><input type="radio" name="fatigue3" value="〇"> 〇</label>
+  　　<label><input type="radio" name="fatigue3" value="△"> △</label>
+  　　<label><input type="radio" name="fatigue3" value="×"> ×</label>
+　　</div>
+　　<div>
+　　  <label><input type="radio" name="morning3" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="morning3" value="△"> △</label>
+ 　　 <label><input type="radio" name="morning3" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>4. 二日酔いではないですか？</label><br>
+ 　　 <label><input type="radio" name="Hangover3" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Hangover3" value="△"> △</label>
+ 　　 <label><input type="radio" name="Hangover3" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>5. 現在の体調は良いですか？</label><br>
+ 　　 <label><input type="radio" name="condition3" value="〇"> 〇</label>
+  　　<label><input type="radio" name="condition3" value="△"> △</label>
+  　　<label><input type="radio" name="condition3" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>6. 空調服を着用していますか？</label><br>
+ 　　 <label><input type="radio" name="clothing3" value="〇"> 〇</label>
+  　　<label><input type="radio" name="clothing3" value="△"> △</label>
+  　　<label><input type="radio" name="clothing3" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>7. 持病・病気による医師からの暑熱環境での作業制限の確認？</label><br>
+ 　　 <label><input type="radio" name="doctor3" value="〇"> 〇：問題なし又は持病病気なし</label>
+ 　　 <label><input type="radio" name="doctor3" value="△"> △：注意するよう言われている</label>
+ 　　 <label><input type="radio" name="doctor3" value="×"> ×:止められている</label>
+　　</div>
+　　<div>
+ 　　 <label>8. 暑熱順化の確認？</label><br>
+ 　　 <label><input type="radio" name="heat3" value="1"> 1：1～2日目</label>
+ 　　 <label><input type="radio" name="heat3" value="2"> 2：3日目</label>
+ 　　 <label><input type="radio" name="heat3" value="3"> 3：4～5日目</label>
+ 　　 <label><input type="radio" name="heat3" value="4"> 4：6～7日目</label>
+ 　　 <label><input type="radio" name="heat3" value="5"> 5：8日目以上</label>
+　　</div>
+　　<div>
+ 　　 <label>本日の作業は可能ですか？</label><br>
+ 　　 <label><input type="radio" name="possible3" value="〇"> 〇</label>
+  　　<label><input type="radio" name="possible3" value="△"> △</label>
+  　　<label><input type="radio" name="possible3" value="×"> ×</label>
+　　</div>
+    <label>水分・塩分の接種確認:</label><br>
+   <h2>10. 水分・塩分の摂取確認（午前）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>8:30</p>
+  　　　<label><input type="radio" name="intake_08303" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_08303" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_08303" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_08303" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>9:00</p>
+  　　　<label><input type="radio" name="intake_09003" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09003" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09003" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_09003" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>9:30</p>
+ 　　　 <label><input type="radio" name="intake_09303" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09303" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09303" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_09303" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>10:00</p>
+ 　　　 <label><input type="radio" name="intake_10003" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_10003" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_10003" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10003" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>10:30</p>
+　　　  <label><input type="radio" name="intake_10303" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_10303" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_10303" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10303" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>11:00</p>
+ 　　　 <label><input type="radio" name="intake_11003" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_11003" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_11003" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11003" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>11:30</p>
+　　　  <label><input type="radio" name="intake_11303" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_11303" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_11303" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11303" value="とっていない"> とっていない</label>
+　　　</div>
+
+ <h2>10. 午後作業前</h2>
+　　<div>
+ 　　 <label>9. 昼食はしっかり食べましたか？</label><br>
+　　  <label><input type="radio" name="lunch3" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="lunch3" value="△"> △</label>
+ 　　 <label><input type="radio" name="lunch3" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>10. 水分・塩分は補給できましたか？</label><br>
+　　  <label><input type="radio" name="water3" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="water3" value="△"> △</label>
+ 　　 <label><input type="radio" name="water3" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>11. 気分・顔色は良いですか？</label><br>
+　　  <label><input type="radio" name="Complexion3" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Complexion3" value="△"> △</label>
+ 　　 <label><input type="radio" name="Complexion3" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>午後の作業も可能ですか？</label><br>
+　　  <label><input type="radio" name="work3" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="work3" value="△"> △</label>
+ 　　 <label><input type="radio" name="work3" value="×"> ×</label>
+　　</div>
+
+   <h2>10. 水分・塩分の摂取確認（午後）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>13:300</p>
+  　　　<label><input type="radio" name="intake_13303" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_13303" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_13303" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_13303" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>14:00</p>
+ 　　　 <label><input type="radio" name="intake_14003" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_14003" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_14003" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14003" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>14:30</p>
+ 　　　 <label><input type="radio" name="intake_14303" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_14303" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_14303" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14303" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>15:00</p>
+　　　  <label><input type="radio" name="intake_15003" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_15003" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_15003" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15003" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>15:30</p>
+ 　　　 <label><input type="radio" name="intake_15303" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_15303" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_15303" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15303" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:00</p>
+　　　  <label><input type="radio" name="intake_16003" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16003" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16003" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16003" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:30</p>
+　　　  <label><input type="radio" name="intake_16303" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16303" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16303" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16303" value="とっていない"> とっていない</label>
+　　　</div>
+   <h2>作業前/朝礼前</h2>
+   <h3>4人目</h3>
+      <label>名前: <input type="text" name="name4"></label><br>
+    </div>
+    <div>
+      <label>1. 6時間以上睡眠を取れましたか？</label><br> 
+      <label><input type="radio" name="sleep4" value="〇"> 〇</label>
+      <label><input type="radio" name="sleep4" value="△"> △</label>
+      <label><input type="radio" name="sleep4" value="×"> ×</label>
+    </div> 
+    <div>
+      <label>2. 疲れは溜まっていませんか？</label><br>
+ 　　 <label><input type="radio" name="fatigue4" value="〇"> 〇</label>
+  　　<label><input type="radio" name="fatigue4" value="△"> △</label>
+  　　<label><input type="radio" name="fatigue4" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>3. 朝食を食べましたか？</label><br>
+　　  <label><input type="radio" name="morning4" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="morning4" value="△"> △</label>
+ 　　 <label><input type="radio" name="morning4" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>4. 二日酔いではないですか？</label><br>
+ 　　 <label><input type="radio" name="Hangover4" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Hangover4" value="△"> △</label>
+ 　　 <label><input type="radio" name="Hangover4" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>5. 現在の体調は良いですか？</label><br>
+ 　　 <label><input type="radio" name="condition4" value="〇"> 〇</label>
+  　　<label><input type="radio" name="condition4" value="△"> △</label>
+  　　<label><input type="radio" name="condition4" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>6. 空調服を着用していますか？</label><br>
+ 　　 <label><input type="radio" name="clothing4" value="〇"> 〇</label>
+  　　<label><input type="radio" name="clothing4" value="△"> △</label>
+  　　<label><input type="radio" name="clothing4" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>7. 持病・病気による医師からの暑熱環境での作業制限の確認？</label><br>
+ 　　 <label><input type="radio" name="doctor4" value="〇"> 〇：問題なし又は持病病気なし</label>
+ 　　 <label><input type="radio" name="doctor4" value="△"> △：注意するよう言われている</label>
+ 　　 <label><input type="radio" name="doctor4" value="×"> ×:止められている</label>
+　　</div>
+　　<div>
+ 　　 <label>8. 暑熱順化の確認？</label><br>
+ 　　 <label><input type="radio" name="heat4" value="1"> 1：1～2日目</label>
+ 　　 <label><input type="radio" name="heat4" value="2"> 2：3日目</label>
+ 　　 <label><input type="radio" name="heat4" value="3"> 3：4～5日目</label>
+ 　　 <label><input type="radio" name="heat4" value="4"> 4：6～7日目</label>
+ 　　 <label><input type="radio" name="heat4" value="5"> 5：8日目以上</label>
+　　</div>
+　　<div>
+ 　　 <label>本日の作業は可能ですか？</label><br>
+ 　　 <label><input type="radio" name="possible4" value="〇"> 〇</label>
+  　　<label><input type="radio" name="possible4" value="△"> △</label>
+  　　<label><input type="radio" name="possible4" value="×"> ×</label>
+　　</div>
+    <label>水分・塩分の接種確認:</label><br>
+   <h2>10. 水分・塩分の摂取確認（午前）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>8:30</p>
+  　　　<label><input type="radio" name="intake_08304" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_08304" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_08304" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_08304" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>9:00</p>
+  　　　<label><input type="radio" name="intake_09004" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09004" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09004" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_09004" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>9:30</p>
+ 　　　 <label><input type="radio" name="intake_09304" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09304" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09304" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_09304" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>10:00</p>
+ 　　　 <label><input type="radio" name="intake_10004" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_10004" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_10004" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10004" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>10:30</p>
+　　　  <label><input type="radio" name="intake_10304" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_10304" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_10304" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10304" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>11:00</p>
+ 　　　 <label><input type="radio" name="intake_11004" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_11004" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_11004" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11004" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>11:30</p>
+　　　  <label><input type="radio" name="intake_11304" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_11304" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_11304" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11304" value="とっていない"> とっていない</label>
+　　　</div>
+
+ <h2>10. 午後作業前</h2>
+　　<div>
+ 　　 <label>9. 昼食はしっかり食べましたか？</label><br>
+　　  <label><input type="radio" name="lunch4" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="lunch4" value="△"> △</label>
+ 　　 <label><input type="radio" name="lunch4" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>10. 水分・塩分は補給できましたか？</label><br>
+　　  <label><input type="radio" name="water4" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="water4" value="△"> △</label>
+ 　　 <label><input type="radio" name="water4" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>11. 気分・顔色は良いですか？</label><br>
+　　  <label><input type="radio" name="Complexion4" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Complexion4" value="△"> △</label>
+ 　　 <label><input type="radio" name="Complexion4" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>午後の作業も可能ですか？</label><br>
+　　  <label><input type="radio" name="work4" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="work4" value="△"> △</label>
+ 　　 <label><input type="radio" name="work4" value="×"> ×</label>
+　　</div>
+
+   <h2>10. 水分・塩分の摂取確認（午後）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>13:300</p>
+  　　　<label><input type="radio" name="intake_13304" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_13304" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_13304" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_13304" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>14:00</p>
+ 　　　 <label><input type="radio" name="intake_14004" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_14004" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_14004" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14004" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>14:30</p>
+ 　　　 <label><input type="radio" name="intake_14304" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_14304" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_14304" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14304" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>15:00</p>
+　　　  <label><input type="radio" name="intake_15004" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_15004" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_15004" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15004" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>15:30</p>
+ 　　　 <label><input type="radio" name="intake_15304" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_15304" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_15304" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15304" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:00</p>
+　　　  <label><input type="radio" name="intake_16004" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16004" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16004" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16004" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:30</p>
+　　　  <label><input type="radio" name="intake_16304" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16304" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16304" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16304" value="とっていない"> とっていない</label>
+　　　</div>
+   <h2>作業前/朝礼前</h2>
+   <h3>5人目</h3>
+      <label>名前: <input type="text" name="name5"></label><br>
+    </div>
+    <div>
+      <label>1. 6時間以上睡眠を取れましたか？</label><br> 
+      <label><input type="radio" name="sleep5" value="〇"> 〇</label>
+      <label><input type="radio" name="sleep5" value="△"> △</label>
+      <label><input type="radio" name="sleep5" value="×"> ×</label>
+    </div> 
+    <div>
+      <label>2. 疲れは溜まっていませんか？</label><br>
+ 　　 <label><input type="radio" name="fatigue5" value="〇"> 〇</label>
+  　　<label><input type="radio" name="fatigue5" value="△"> △</label>
+  　　<label><input type="radio" name="fatigue5" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>3. 朝食を食べましたか？</label><br>
+　　  <label><input type="radio" name="morning5" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="morning5" value="△"> △</label>
+ 　　 <label><input type="radio" name="morning5" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>4. 二日酔いではないですか？</label><br>
+ 　　 <label><input type="radio" name="Hangover5" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Hangover5" value="△"> △</label>
+ 　　 <label><input type="radio" name="Hangover5" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>5. 現在の体調は良いですか？</label><br>
+ 　　 <label><input type="radio" name="condition5" value="〇"> 〇</label>
+  　　<label><input type="radio" name="condition5" value="△"> △</label>
+  　　<label><input type="radio" name="condition5" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>6. 空調服を着用していますか？</label><br>
+ 　　 <label><input type="radio" name="clothing5" value="〇"> 〇</label>
+  　　<label><input type="radio" name="clothing5" value="△"> △</label>
+  　　<label><input type="radio" name="clothing5" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>7. 持病・病気による医師からの暑熱環境での作業制限の確認？</label><br>
+ 　　 <label><input type="radio" name="doctor5" value="〇"> 〇：問題なし又は持病病気なし</label>
+ 　　 <label><input type="radio" name="doctor5" value="△"> △：注意するよう言われている</label>
+ 　　 <label><input type="radio" name="doctor5" value="×"> ×:止められている</label>
+　　</div>
+　　<div>
+ 　　 <label>8. 暑熱順化の確認？</label><br>
+ 　　 <label><input type="radio" name="heat5" value="1"> 1：1～2日目</label>
+ 　　 <label><input type="radio" name="heat5" value="2"> 2：3日目</label>
+ 　　 <label><input type="radio" name="heat5" value="3"> 3：4～5日目</label>
+ 　　 <label><input type="radio" name="heat5" value="4"> 4：6～7日目</label>
+ 　　 <label><input type="radio" name="heat5" value="5"> 5：8日目以上</label>
+　　</div>
+　　<div>
+ 　　 <label>本日の作業は可能ですか？</label><br>
+ 　　 <label><input type="radio" name="possible5" value="〇"> 〇</label>
+  　　<label><input type="radio" name="possible5" value="△"> △</label>
+  　　<label><input type="radio" name="possible5" value="×"> ×</label>
+　　</div>
+    <label>水分・塩分の接種確認:</label><br>
+   <h2>10. 水分・塩分の摂取確認（午前）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>8:30</p>
+  　　　<label><input type="radio" name="intake_08305" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_08305" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_08305" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_08305" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>9:00</p>
+  　　　<label><input type="radio" name="intake_09005" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09005" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09005" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_09005" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>9:30</p>
+ 　　　 <label><input type="radio" name="intake_09305" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09305" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09305" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_09305" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>10:00</p>
+ 　　　 <label><input type="radio" name="intake_10005" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_10005" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_10005" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10005" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>10:30</p>
+　　　  <label><input type="radio" name="intake_10305" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_10305" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_10305" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10305" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>11:00</p>
+ 　　　 <label><input type="radio" name="intake_11005" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_11005" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_11005" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11005" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>11:30</p>
+　　　  <label><input type="radio" name="intake_11305" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_11305" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_11305" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11305" value="とっていない"> とっていない</label>
+　　　</div>
+
+ <h2>10. 午後作業前</h2>
+　　<div>
+ 　　 <label>9. 昼食はしっかり食べましたか？</label><br>
+　　  <label><input type="radio" name="lunch5" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="lunch5" value="△"> △</label>
+ 　　 <label><input type="radio" name="lunch5" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>10. 水分・塩分は補給できましたか？</label><br>
+　　  <label><input type="radio" name="water5" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="water5" value="△"> △</label>
+ 　　 <label><input type="radio" name="water5" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>11. 気分・顔色は良いですか？</label><br>
+　　  <label><input type="radio" name="Complexion5" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Complexion5" value="△"> △</label>
+ 　　 <label><input type="radio" name="Complexion5" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>午後の作業も可能ですか？</label><br>
+　　  <label><input type="radio" name="work5" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="work5" value="△"> △</label>
+ 　　 <label><input type="radio" name="work5" value="×"> ×</label>
+　　</div>
+
+   <h2>10. 水分・塩分の摂取確認（午後）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>13:300</p>
+  　　　<label><input type="radio" name="intake_13305" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_13305" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_13305" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_13305" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>14:00</p>
+ 　　　 <label><input type="radio" name="intake_14005" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_14005" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_14005" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14005" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>14:30</p>
+ 　　　 <label><input type="radio" name="intake_14305" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_14305" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_14305" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14305" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>15:00</p>
+　　　  <label><input type="radio" name="intake_15005" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_15005" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_15005" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15005" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>15:30</p>
+ 　　　 <label><input type="radio" name="intake_15305" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_15305" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_15305" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15305" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:00</p>
+　　　  <label><input type="radio" name="intake_16005" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16005" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16005" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16005" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:30</p>
+　　　  <label><input type="radio" name="intake_16305" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16305" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16305" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16305" value="とっていない"> とっていない</label>
+　　　</div>
+  <h2>作業前/朝礼前</h2>
+   <h3>6人目</h3>
+      <label>名前: <input type="text" name="name6"></label><br>
+    </div>
+    <div>
+      <label>1. 6時間以上睡眠を取れましたか？</label><br> 
+      <label><input type="radio" name="sleep6" value="〇"> 〇</label>
+      <label><input type="radio" name="sleep6" value="△"> △</label>
+      <label><input type="radio" name="sleep6" value="×"> ×</label>
+    </div> 
+    <div>
+      <label>2. 疲れは溜まっていませんか？</label><br>
+ 　　 <label><input type="radio" name="fatigue6" value="〇"> 〇</label>
+  　　<label><input type="radio" name="fatigue6" value="△"> △</label>
+  　　<label><input type="radio" name="fatigue6" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>3. 朝食を食べましたか？</label><br>
+　　  <label><input type="radio" name="morning6" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="morning6" value="△"> △</label>
+ 　　 <label><input type="radio" name="morning6" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>4. 二日酔いではないですか？</label><br>
+ 　　 <label><input type="radio" name="Hangover6" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Hangover6" value="△"> △</label>
+ 　　 <label><input type="radio" name="Hangover6" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>5. 現在の体調は良いですか？</label><br>
+ 　　 <label><input type="radio" name="condition6" value="〇"> 〇</label>
+  　　<label><input type="radio" name="condition6" value="△"> △</label>
+  　　<label><input type="radio" name="condition6" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>6. 空調服を着用していますか？</label><br>
+ 　　 <label><input type="radio" name="clothing6" value="〇"> 〇</label>
+  　　<label><input type="radio" name="clothing6" value="△"> △</label>
+  　　<label><input type="radio" name="clothing6" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>7. 持病・病気による医師からの暑熱環境での作業制限の確認？</label><br>
+ 　　 <label><input type="radio" name="doctor6" value="〇"> 〇：問題なし又は持病病気なし</label>
+ 　　 <label><input type="radio" name="doctor6" value="△"> △：注意するよう言われている</label>
+ 　　 <label><input type="radio" name="doctor6" value="×"> ×:止められている</label>
+　　</div>
+　　<div>
+ 　　 <label>8. 暑熱順化の確認？</label><br>
+ 　　 <label><input type="radio" name="heat6" value="1"> 1：1～2日目</label>
+ 　　 <label><input type="radio" name="heat6" value="2"> 2：3日目</label>
+ 　　 <label><input type="radio" name="heat6" value="3"> 3：4～5日目</label>
+ 　　 <label><input type="radio" name="heat6" value="4"> 4：6～7日目</label>
+ 　　 <label><input type="radio" name="heat6" value="5"> 5：8日目以上</label>
+　　</div>
+　　<div>
+ 　　 <label>本日の作業は可能ですか？</label><br>
+ 　　 <label><input type="radio" name="possible6" value="〇"> 〇</label>
+  　　<label><input type="radio" name="possible6" value="△"> △</label>
+  　　<label><input type="radio" name="possible6" value="×"> ×</label>
+　　</div>
+    <label>水分・塩分の接種確認:</label><br>
+   <h2>10. 水分・塩分の摂取確認（午前）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>8:30</p>
+  　　　<label><input type="radio" name="intake_08306" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_08306" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_08306" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_08306" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>9:00</p>
+  　　　<label><input type="radio" name="intake_09006" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09006" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09006" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_09006" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>9:30</p>
+ 　　　 <label><input type="radio" name="intake_09306" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09306" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09306" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_09306" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>10:00</p>
+ 　　　 <label><input type="radio" name="intake_10006" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_10006" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_10006" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10006" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>10:30</p>
+　　　  <label><input type="radio" name="intake_10306" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_10306" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_10306" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10306" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>11:00</p>
+ 　　　 <label><input type="radio" name="intake_11006" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_11006" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_11006" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11006" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>11:30</p>
+　　　  <label><input type="radio" name="intake_11306" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_11306" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_11306" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11306" value="とっていない"> とっていない</label>
+　　　</div>
+
+ <h2>10. 午後作業前</h2>
+　　<div>
+ 　　 <label>9. 昼食はしっかり食べましたか？</label><br>
+　　  <label><input type="radio" name="lunch6" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="lunch6" value="△"> △</label>
+ 　　 <label><input type="radio" name="lunch6" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>10. 水分・塩分は補給できましたか？</label><br>
+　　  <label><input type="radio" name="water6" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="water6" value="△"> △</label>
+ 　　 <label><input type="radio" name="water6" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>11. 気分・顔色は良いですか？</label><br>
+　　  <label><input type="radio" name="Complexion6" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Complexion6" value="△"> △</label>
+ 　　 <label><input type="radio" name="Complexion6" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>午後の作業も可能ですか？</label><br>
+　　  <label><input type="radio" name="work6" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="work6" value="△"> △</label>
+ 　　 <label><input type="radio" name="work6" value="×"> ×</label>
+　　</div>
+
+   <h2>10. 水分・塩分の摂取確認（午後）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>13:300</p>
+  　　　<label><input type="radio" name="intake_13306" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_13306" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_13306" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_13306" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>14:00</p>
+ 　　　 <label><input type="radio" name="intake_14006" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_14006" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_14006" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14006" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>14:30</p>
+ 　　　 <label><input type="radio" name="intake_14306" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_14306" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_14306" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14306" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>15:00</p>
+　　　  <label><input type="radio" name="intake_15006" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_15006" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_15006" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15006" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>15:30</p>
+ 　　　 <label><input type="radio" name="intake_15306" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_15306" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_15306" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15306" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:00</p>
+　　　  <label><input type="radio" name="intake_16006" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16006" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16006" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16006" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:30</p>
+　　　  <label><input type="radio" name="intake_16306" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16306" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16306" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16306" value="とっていない"> とっていない</label>
+　　　</div>
+   <h2>作業前/朝礼前</h2>
+   <h3>7人目</h3>
+      <label>名前: <input type="text" name="name7"></label><br>
+    </div>
+    <div>
+      <label>1. 6時間以上睡眠を取れましたか？</label><br> 
+      <label><input type="radio" name="sleep7" value="〇"> 〇</label>
+      <label><input type="radio" name="sleep7" value="△"> △</label>
+      <label><input type="radio" name="sleep7" value="×"> ×</label>
+    </div> 
+    <div>
+      <label>2. 疲れは溜まっていませんか？</label><br>
+ 　　 <label><input type="radio" name="fatigue7" value="〇"> 〇</label>
+  　　<label><input type="radio" name="fatigue7" value="△"> △</label>
+  　　<label><input type="radio" name="fatigue7" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>3. 朝食を食べましたか？</label><br>
+　　  <label><input type="radio" name="morning7" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="morning7" value="△"> △</label>
+ 　　 <label><input type="radio" name="morning7" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>4. 二日酔いではないですか？</label><br>
+ 　　 <label><input type="radio" name="Hangover7" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Hangover7" value="△"> △</label>
+ 　　 <label><input type="radio" name="Hangover7" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>5. 現在の体調は良いですか？</label><br>
+ 　　 <label><input type="radio" name="condition7" value="〇"> 〇</label>
+  　　<label><input type="radio" name="condition7" value="△"> △</label>
+  　　<label><input type="radio" name="condition7" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>6. 空調服を着用していますか？</label><br>
+ 　　 <label><input type="radio" name="clothing7" value="〇"> 〇</label>
+  　　<label><input type="radio" name="clothing7" value="△"> △</label>
+  　　<label><input type="radio" name="clothing7" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>7. 持病・病気による医師からの暑熱環境での作業制限の確認？</label><br>
+ 　　 <label><input type="radio" name="doctor7" value="〇"> 〇：問題なし又は持病病気なし</label>
+ 　　 <label><input type="radio" name="doctor7" value="△"> △：注意するよう言われている</label>
+ 　　 <label><input type="radio" name="doctor7" value="×"> ×:止められている</label>
+　　</div>
+　　<div>
+ 　　 <label>8. 暑熱順化の確認？</label><br>
+ 　　 <label><input type="radio" name="fatigue7" value="1"> 1：1～2日目</label>
+ 　　 <label><input type="radio" name="fatigue7" value="2"> 2：3日目</label>
+ 　　 <label><input type="radio" name="fatigue7" value="3"> 3：4～5日目</label>
+ 　　 <label><input type="radio" name="fatigue7" value="4"> 4：6～7日目</label>
+ 　　 <label><input type="radio" name="fatigue7" value="5"> 5：8日目以上</label>
+　　</div>
+　　<div>
+ 　　 <label>本日の作業は可能ですか？</label><br>
+ 　　 <label><input type="radio" name="possible7" value="〇"> 〇</label>
+  　　<label><input type="radio" name="possible7" value="△"> △</label>
+  　　<label><input type="radio" name="possible7" value="×"> ×</label>
+　　</div>
+    <label>水分・塩分の接種確認:</label><br>
+   <h2>10. 水分・塩分の摂取確認（午前）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>8:30</p>
+  　　　<label><input type="radio" name="intake_08307" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_08307" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_08307" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_08307" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>9:00</p>
+  　　　<label><input type="radio" name="intake_09007" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09007" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09007" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_09007" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>9:30</p>
+ 　　　 <label><input type="radio" name="intake_09307" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09307" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09307" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_09307" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>10:00</p>
+ 　　　 <label><input type="radio" name="intake_10007" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_10007" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_10007" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10007" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>10:30</p>
+　　　  <label><input type="radio" name="intake_10307" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_10307" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_10307" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10307" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>11:00</p>
+ 　　　 <label><input type="radio" name="intake_11007" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_11007" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_11007" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11007" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>11:30</p>
+　　　  <label><input type="radio" name="intake_11307" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_11307" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_11307" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11307" value="とっていない"> とっていない</label>
+　　　</div>
+
+ <h2>10. 午後作業前</h2>
+　　<div>
+ 　　 <label>9. 昼食はしっかり食べましたか？</label><br>
+　　  <label><input type="radio" name="lunch7" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="lunch7" value="△"> △</label>
+ 　　 <label><input type="radio" name="lunch7" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>10. 水分・塩分は補給できましたか？</label><br>
+　　  <label><input type="radio" name="water7" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="water7" value="△"> △</label>
+ 　　 <label><input type="radio" name="water7" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>11. 気分・顔色は良いですか？</label><br>
+　　  <label><input type="radio" name="Complexion7" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Complexion7" value="△"> △</label>
+ 　　 <label><input type="radio" name="Complexion7" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>午後の作業も可能ですか？</label><br>
+　　  <label><input type="radio" name="work7" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="work7" value="△"> △</label>
+ 　　 <label><input type="radio" name="work7" value="×"> ×</label>
+　　</div>
+
+   <h2>10. 水分・塩分の摂取確認（午後）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>13:300</p>
+  　　　<label><input type="radio" name="intake_13307" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_13307" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_13307" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_13307" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>14:00</p>
+ 　　　 <label><input type="radio" name="intake_14007" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_14007" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_14007" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14007" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>14:30</p>
+ 　　　 <label><input type="radio" name="intake_14307" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_14307" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_14307" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14307" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>15:00</p>
+　　　  <label><input type="radio" name="intake_15007" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_15007" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_15007" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15007" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>15:30</p>
+ 　　　 <label><input type="radio" name="intake_15307" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_15307" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_15307" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15307" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:00</p>
+　　　  <label><input type="radio" name="intake_16007" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16007" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16007" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16007" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:30</p>
+　　　  <label><input type="radio" name="intake_16307" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16307" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16307" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16307" value="とっていない"> とっていない</label>
+　　　</div>
+   <h2>作業前/朝礼前</h2>
+   <h3>8人目</h3>
+      <label>名前: <input type="text" name="name8"></label><br>
+    </div>
+    <div>
+      <label>1. 6時間以上睡眠を取れましたか？</label><br> 
+      <label><input type="radio" name="sleep8" value="〇"> 〇</label>
+      <label><input type="radio" name="sleep8" value="△"> △</label>
+      <label><input type="radio" name="sleep8" value="×"> ×</label>
+    </div> 
+    <div>
+      <label>2. 疲れは溜まっていませんか？</label><br>
+ 　　 <label><input type="radio" name="fatigue8" value="〇"> 〇</label>
+  　　<label><input type="radio" name="fatigue8" value="△"> △</label>
+  　　<label><input type="radio" name="fatigue8" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>3. 朝食を食べましたか？</label><br>
+　　  <label><input type="radio" name="morning8" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="morning8" value="△"> △</label>
+ 　　 <label><input type="radio" name="morning8" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>4. 二日酔いではないですか？</label><br>
+ 　　 <label><input type="radio" name="Hangover8" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Hangover8" value="△"> △</label>
+ 　　 <label><input type="radio" name="Hangover8" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>5. 現在の体調は良いですか？</label><br>
+ 　　 <label><input type="radio" name="condition8" value="〇"> 〇</label>
+  　　<label><input type="radio" name="condition8" value="△"> △</label>
+  　　<label><input type="radio" name="condition8" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>6. 空調服を着用していますか？</label><br>
+ 　　 <label><input type="radio" name="clothing8" value="〇"> 〇</label>
+  　　<label><input type="radio" name="clothing8" value="△"> △</label>
+  　　<label><input type="radio" name="clothing8" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>7. 持病・病気による医師からの暑熱環境での作業制限の確認？</label><br>
+ 　　 <label><input type="radio" name="doctor8" value="〇"> 〇：問題なし又は持病病気なし</label>
+ 　　 <label><input type="radio" name="doctor8" value="△"> △：注意するよう言われている</label>
+ 　　 <label><input type="radio" name="doctor8" value="×"> ×:止められている</label>
+　　</div>
+　　<div>
+ 　　 <label>8. 暑熱順化の確認？</label><br>
+ 　　 <label><input type="radio" name="heat8" value="1"> 1：1～2日目</label>
+ 　　 <label><input type="radio" name="heat8" value="2"> 2：3日目</label>
+ 　　 <label><input type="radio" name="heat8" value="3"> 3：4～5日目</label>
+ 　　 <label><input type="radio" name="heat8" value="4"> 4：6～7日目</label>
+ 　　 <label><input type="radio" name="heat8" value="5"> 5：8日目以上</label>
+　　</div>
+　　<div>
+ 　　 <label>本日の作業は可能ですか？</label><br>
+ 　　 <label><input type="radio" name="possible8" value="〇"> 〇</label>
+  　　<label><input type="radio" name="possible8" value="△"> △</label>
+  　　<label><input type="radio" name="possible8" value="×"> ×</label>
+　　</div>
+    <label>水分・塩分の接種確認:</label><br>
+   <h2>10. 水分・塩分の摂取確認（午前）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>8:30</p>
+  　　　<label><input type="radio" name="intake_08308" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_08308" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_08308" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_08308" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>9:00</p>
+  　　　<label><input type="radio" name="intake_09008" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09008" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09008" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_09008" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>9:30</p>
+ 　　　 <label><input type="radio" name="intake_09308" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09308" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09308" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_09308" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>10:00</p>
+ 　　　 <label><input type="radio" name="intake_10008" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_10008" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_10008" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10008" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>10:30</p>
+　　　  <label><input type="radio" name="intake_10308" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_10308" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_10308" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10308" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>11:00</p>
+ 　　　 <label><input type="radio" name="intake_11008" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_11008" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_11008" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11008" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>11:30</p>
+　　　  <label><input type="radio" name="intake_11308" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_11308" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_11308" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11308" value="とっていない"> とっていない</label>
+　　　</div>
+
+ <h2>10. 午後作業前</h2>
+　　<div>
+ 　　 <label>9. 昼食はしっかり食べましたか？</label><br>
+　　  <label><input type="radio" name="lunch8" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="lunch8" value="△"> △</label>
+ 　　 <label><input type="radio" name="lunch8" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>10. 水分・塩分は補給できましたか？</label><br>
+　　  <label><input type="radio" name="water8" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="water8" value="△"> △</label>
+ 　　 <label><input type="radio" name="water8" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>11. 気分・顔色は良いですか？</label><br>
+　　  <label><input type="radio" name="Complexion8" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Complexion8" value="△"> △</label>
+ 　　 <label><input type="radio" name="Complexion8" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>午後の作業も可能ですか？</label><br>
+　　  <label><input type="radio" name="work8" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="work8" value="△"> △</label>
+ 　　 <label><input type="radio" name="work8" value="×"> ×</label>
+　　</div>
+
+   <h2>10. 水分・塩分の摂取確認（午後）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>13:300</p>
+  　　　<label><input type="radio" name="intake_13308" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_13308" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_13308" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_13308" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>14:00</p>
+ 　　　 <label><input type="radio" name="intake_14008" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_14008" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_14008" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14008" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>14:30</p>
+ 　　　 <label><input type="radio" name="intake_14308" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_14308" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_14308" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14308" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>15:00</p>
+　　　  <label><input type="radio" name="intake_15008" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_15008" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_15008" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15008" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>15:30</p>
+ 　　　 <label><input type="radio" name="intake_15308" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_15308" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_15308" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15308" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:00</p>
+　　　  <label><input type="radio" name="intake_16008" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16008" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16008" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16008" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:30</p>
+　　　  <label><input type="radio" name="intake_16308" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16308" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16308" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16308" value="とっていない"> とっていない</label>
+　　　</div>
+   <h2>作業前/朝礼前</h2>
+   <h3>9人目</h3>
+      <label>名前: <input type="text" name="name9"></label><br>
+    </div>
+    <div>
+      <label>1. 6時間以上睡眠を取れましたか？</label><br> 
+      <label><input type="radio" name="sleep9" value="〇"> 〇</label>
+      <label><input type="radio" name="sleep9" value="△"> △</label>
+      <label><input type="radio" name="sleep9" value="×"> ×</label>
+    </div> 
+    <div>
+      <label>2. 疲れは溜まっていませんか？</label><br>
+ 　　 <label><input type="radio" name="fatigue9" value="〇"> 〇</label>
+  　　<label><input type="radio" name="fatigue9" value="△"> △</label>
+  　　<label><input type="radio" name="fatigue9" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>3. 朝食を食べましたか？</label><br>
+　　  <label><input type="radio" name="morning9" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="morning9" value="△"> △</label>
+ 　　 <label><input type="radio" name="morning9" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>4. 二日酔いではないですか？</label><br>
+ 　　 <label><input type="radio" name="Hangover9" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Hangover9" value="△"> △</label>
+ 　　 <label><input type="radio" name="Hangover9" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>5. 現在の体調は良いですか？</label><br>
+ 　　 <label><input type="radio" name="condition9" value="〇"> 〇</label>
+  　　<label><input type="radio" name="condition9" value="△"> △</label>
+  　　<label><input type="radio" name="condition9" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>6. 空調服を着用していますか？</label><br>
+ 　　 <label><input type="radio" name="clothing9" value="〇"> 〇</label>
+  　　<label><input type="radio" name="clothing9" value="△"> △</label>
+  　　<label><input type="radio" name="clothing9" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>7. 持病・病気による医師からの暑熱環境での作業制限の確認？</label><br>
+ 　　 <label><input type="radio" name="doctor9" value="〇"> 〇：問題なし又は持病病気なし</label>
+ 　　 <label><input type="radio" name="doctor9" value="△"> △：注意するよう言われている</label>
+ 　　 <label><input type="radio" name="doctor9" value="×"> ×:止められている</label>
+　　</div>
+　　<div>
+ 　　 <label>8. 暑熱順化の確認？</label><br>
+ 　　 <label><input type="radio" name="heat9" value="1"> 1：1～2日目</label>
+ 　　 <label><input type="radio" name="heat9" value="2"> 2：3日目</label>
+ 　　 <label><input type="radio" name="heat9" value="3"> 3：4～5日目</label>
+ 　　 <label><input type="radio" name="heat9" value="4"> 4：6～7日目</label>
+ 　　 <label><input type="radio" name="heat9" value="5"> 5：8日目以上</label>
+　　</div>
+　　<div>
+ 　　 <label>本日の作業は可能ですか？</label><br>
+ 　　 <label><input type="radio" name="possible9" value="〇"> 〇</label>
+  　　<label><input type="radio" name="possible9" value="△"> △</label>
+  　　<label><input type="radio" name="possible9" value="×"> ×</label>
+　　</div>
+    <label>水分・塩分の接種確認:</label><br>
+   <h2>10. 水分・塩分の摂取確認（午前）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>8:30</p>
+  　　　<label><input type="radio" name="intake_08309" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_08309" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_08309" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_08309" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>9:00</p>
+  　　　<label><input type="radio" name="intake_09009" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09009" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09009" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_09009" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>9:30</p>
+ 　　　 <label><input type="radio" name="intake_09309" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_09309" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_09309" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_09309" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>10:00</p>
+ 　　　 <label><input type="radio" name="intake_10009" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_10009" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_10009" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10009" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>10:30</p>
+　　　  <label><input type="radio" name="intake_10309" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_10309" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_10309" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_10309" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>11:00</p>
+ 　　　 <label><input type="radio" name="intake_11009" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_11009" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_11009" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11009" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>11:30</p>
+　　　  <label><input type="radio" name="intake_11309" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_11309" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_11309" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_11309" value="とっていない"> とっていない</label>
+　　　</div>
+
+ <h2>10. 午後作業前</h2>
+　　<div>
+ 　　 <label>9. 昼食はしっかり食べましたか？</label><br>
+　　  <label><input type="radio" name="lunch9" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="lunch9" value="△"> △</label>
+ 　　 <label><input type="radio" name="lunch9" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>10. 水分・塩分は補給できましたか？</label><br>
+　　  <label><input type="radio" name="water9" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="water9" value="△"> △</label>
+ 　　 <label><input type="radio" name="water9" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>11. 気分・顔色は良いですか？</label><br>
+　　  <label><input type="radio" name="Complexion9" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Complexion9" value="△"> △</label>
+ 　　 <label><input type="radio" name="Complexion9" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>午後の作業も可能ですか？</label><br>
+　　  <label><input type="radio" name="work9" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="work9" value="△"> △</label>
+ 　　 <label><input type="radio" name="work9" value="×"> ×</label>
+　　</div>
+
+   <h2>10. 水分・塩分の摂取確認（午後）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>13:300</p>
+  　　　<label><input type="radio" name="intake_13309" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_13309" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_13309" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_13309" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>14:00</p>
+ 　　　 <label><input type="radio" name="intake_14009" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_14009" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_14009" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14009" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>14:30</p>
+ 　　　 <label><input type="radio" name="intake_14309" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_14309" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_14309" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_14309" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>15:00</p>
+　　　  <label><input type="radio" name="intake_15009" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_15009" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_15009" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15009" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>15:30</p>
+ 　　　 <label><input type="radio" name="intake_15309" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_15309" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_15309" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_15309" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:00</p>
+　　　  <label><input type="radio" name="intake_16009" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16009" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16009" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16009" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:30</p>
+　　　  <label><input type="radio" name="intake_16309" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_16309" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_16309" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_16309" value="とっていない"> とっていない</label>
+　　　</div>
+   <h2>作業前/朝礼前</h2>
+   <h3>10人目</h3>
+      <label>名前: <input type="text" name="name10"></label><br>
+    </div>
+    <div>
+      <label>1. 6時間以上睡眠を取れましたか？</label><br> 
+      <label><input type="radio" name="sleep10" value="〇"> 〇</label>
+      <label><input type="radio" name="sleep10" value="△"> △</label>
+      <label><input type="radio" name="sleep10" value="×"> ×</label>
+    </div> 
+    <div>
+      <label>2. 疲れは溜まっていませんか？</label><br>
+ 　　 <label><input type="radio" name="fatigue10" value="〇"> 〇</label>
+  　　<label><input type="radio" name="fatigue10" value="△"> △</label>
+  　　<label><input type="radio" name="fatigue10" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>3. 朝食を食べましたか？</label><br>
+　　  <label><input type="radio" name="morning10" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="morning10" value="△"> △</label>
+ 　　 <label><input type="radio" name="morning10" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>4. 二日酔いではないですか？</label><br>
+ 　　 <label><input type="radio" name="Hangover10" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Hangover10" value="△"> △</label>
+ 　　 <label><input type="radio" name="Hangover10" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>5. 現在の体調は良いですか？</label><br>
+ 　　 <label><input type="radio" name="condition10" value="〇"> 〇</label>
+  　　<label><input type="radio" name="condition10" value="△"> △</label>
+  　　<label><input type="radio" name="condition10" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>6. 空調服を着用していますか？</label><br>
+ 　　 <label><input type="radio" name="clothing10" value="〇"> 〇</label>
+  　　<label><input type="radio" name="clothing10" value="△"> △</label>
+  　　<label><input type="radio" name="clothing10" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>7. 持病・病気による医師からの暑熱環境での作業制限の確認？</label><br>
+ 　　 <label><input type="radio" name="doctor10" value="〇"> 〇：問題なし又は持病病気なし</label>
+ 　　 <label><input type="radio" name="doctor10" value="△"> △：注意するよう言われている</label>
+ 　　 <label><input type="radio" name="doctor10" value="×"> ×:止められている</label>
+　　</div>
+　　<div>
+ 　　 <label>8. 暑熱順化の確認？</label><br>
+ 　　 <label><input type="radio" name="heat10" value="1"> 1：1～2日目</label>
+ 　　 <label><input type="radio" name="heat10" value="2"> 2：3日目</label>
+ 　　 <label><input type="radio" name="heat10" value="3"> 3：4～5日目</label>
+ 　　 <label><input type="radio" name="heat10" value="4"> 4：6～7日目</label>
+ 　　 <label><input type="radio" name="heat10" value="5"> 5：8日目以上</label>
+　　</div>
+　　<div>
+ 　　 <label>本日の作業は可能ですか？</label><br>
+ 　　 <label><input type="radio" name="possible10" value="〇"> 〇</label>
+  　　<label><input type="radio" name="possible10" value="△"> △</label>
+  　　<label><input type="radio" name="possible10" value="×"> ×</label>
+　　</div>
+    <label>水分・塩分の接種確認:</label><br>
+   <h2>10. 水分・塩分の摂取確認（午前）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>　　　<div>
+ 　　　 <p>8:30</p>
+  　　　<label><input type="radio" name="intake_083010" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_083010" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_083010" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_083010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>9:00</p>
+  　　　<label><input type="radio" name="intake_090010" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_090010" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_090010" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_090010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>9:30</p>
+ 　　　 <label><input type="radio" name="intake_093010" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_093010" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_093010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_093010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>10:00</p>
+ 　　　 <label><input type="radio" name="intake_100010" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_100010" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_100010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_100010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>10:30</p>
+　　　  <label><input type="radio" name="intake_103010" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_103010" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_103010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_103010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>11:00</p>
+ 　　　 <label><input type="radio" name="intake_110010" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_110010" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_110010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_110010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>11:30</p>
+　　　  <label><input type="radio" name="intake_113010" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_113010" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_113010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_113010" value="とっていない"> とっていない</label>
+　　　</div>
+
+ <h2>10. 午後作業前</h2>
+　　<div>
+ 　　 <label>9. 昼食はしっかり食べましたか？</label><br>
+　　  <label><input type="radio" name="lunch10" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="lunch10" value="△"> △</label>
+ 　　 <label><input type="radio" name="lunch10" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>10. 水分・塩分は補給できましたか？</label><br>
+　　  <label><input type="radio" name="water10" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="water10" value="△"> △</label>
+ 　　 <label><input type="radio" name="water10" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>11. 気分・顔色は良いですか？</label><br>
+　　  <label><input type="radio" name="Complexion10" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="Complexion10" value="△"> △</label>
+ 　　 <label><input type="radio" name="Complexion10" value="×"> ×</label>
+　　</div>
+　　<div>
+ 　　 <label>午後の作業も可能ですか？</label><br>
+　　  <label><input type="radio" name="work10" value="〇"> 〇</label>
+ 　　 <label><input type="radio" name="work10" value="△"> △</label>
+ 　　 <label><input type="radio" name="work10" value="×"> ×</label>
+　　</div>
+
+   <h2>10. 水分・塩分の摂取確認（午後）</h2>
+    <h4>水分・塩分補給のタイミングは作業所ルールに準ずる<h4>
+　　　<div>
+ 　　　 <p>13:300</p>
+  　　　<label><input type="radio" name="intake_133010" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_133010" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_133010" value="両方"> 両方</label>
+  　　　<label><input type="radio" name="intake_133010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>14:00</p>
+ 　　　 <label><input type="radio" name="intake_140010" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_140010" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_140010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_140010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>14:30</p>
+ 　　　 <label><input type="radio" name="intake_143010" value="塩分"> 塩分</label>
+  　　　<label><input type="radio" name="intake_143010" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_143010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_143010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>15:00</p>
+　　　  <label><input type="radio" name="intake_150010" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_150010" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_150010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_150010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+ 　　　 <p>15:30</p>
+ 　　　 <label><input type="radio" name="intake_153010" value="塩分"> 塩分</label>
+　　　  <label><input type="radio" name="intake_153010" value="水分"> 水分</label>
+　　　  <label><input type="radio" name="intake_153010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_153010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:00</p>
+　　　  <label><input type="radio" name="intake_160010" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_160010" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_160010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_160010" value="とっていない"> とっていない</label>
+　　　</div>
+　　　<div>
+　　　  <p>16:30</p>
+　　　  <label><input type="radio" name="intake_163010" value="塩分"> 塩分</label>
+ 　　　 <label><input type="radio" name="intake_163010" value="水分"> 水分</label>
+ 　　　 <label><input type="radio" name="intake_163010" value="両方"> 両方</label>
+ 　　　 <label><input type="radio" name="intake_163010" value="とっていない"> とっていない</label>
+　　　</div>
+
+
+    <!-- ...繰り返し -->
+
+    <br>
+    <button type="submit">送信</button>
+  </form>
+</body>
+</html>
